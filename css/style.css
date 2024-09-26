@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #ffffff;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -24,7 +24,7 @@ nav .container {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    color: black; 
+    color: black;
     background-image: linear-gradient(to bottom, #4facfe, #00f2fe, #4facfe);
     -webkit-background-clip: text;
     background-clip: text;
@@ -54,11 +54,156 @@ ul li a {
 
 ul li a:hover {
     background-color: #4facfe;
-    color: white; 
+    color: white;
 }
 
+.image-section {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
 
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    width: 80%;
+}
 
+.image-container {
+    position: relative;
+}
 
+.overlay-content h1 {
+    font-size: 36px;
+}
 
+.overlay-content p {
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.info-box {
+    flex: 1;
+    margin: 0;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.info-box:last-child {
+    border-right: none;
+}
+
+.info-box:nth-child(1) {
+    background-color: #0056b3;
+}
+
+.info-box:nth-child(2) {
+    background-color: #004494;
+}
+
+.info-box:nth-child(3) {
+    background-color: #003374;
+}
+
+.info-box h2 {
+    margin-bottom: 10px;
+}
+
+info-box p {
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+.site-footer {
+    background-color: #26272b;
+    color: #737373;
+    padding: 20px 0;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.site-footer .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-content > div {
+    padding: 0 20px;
+}
+
+.about {
+    flex: 5;
+    position: relative;
+    border-right: 2px solid #2b2a2a;
+}
+
+.CNM, .about-us{
+    flex: 1;
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+.site-footer p {
+    color: #aaa;
+}
+
+.site-footer a {
+    color: #aaa;
+}
+
+.site-footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
